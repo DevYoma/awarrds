@@ -1,5 +1,5 @@
 type Props = {
-    id: string;
+    id?: string;
     title: string;
     leftIcon?: React.ReactNode;
     containerClass: string;
