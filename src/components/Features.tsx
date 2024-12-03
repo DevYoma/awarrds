@@ -27,7 +27,7 @@ export const BentoTilt = ({ children, className="" }: { children: React.ReactNod
         setTransformStyle(newTransform);
     }
 
-    const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {}
+    const handleMouseLeave = () => {}
 
     return(
         <div 

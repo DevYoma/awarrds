@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className="flex justify-center gap-4 md:justify-start">
                     {links.map((link) => (
                         <a 
-                            key={link} 
+                            key={link.href} 
                             href={link.href} 
                             target="_blank" 
                             rel="noopener noreferrer" 

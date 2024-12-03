@@ -19,14 +19,14 @@ const Navbar = () => {
   useEffect(() => {
     if(currentScrollY === 0){
         setIsNavVisible(true);
-        navContainerRef.current.classList.remove('floating-nav'); // removing class based on scroll position
+        navContainerRef.current?.classList.remove('floating-nav'); // removing class based on scroll position
     }
     else if(currentScrollY > lastScrollY){
         setIsNavVisible(false);
-        navContainerRef.current.classList.add('floating-nav'); // adding class based on scroll position
+        navContainerRef.current?.classList.add('floating-nav'); // adding class based on scroll position
     }else if(currentScrollY < lastScrollY){
         setIsNavVisible(true)
-        navContainerRef.current.classList.add('floating-nav'); // adding class based on scroll position
+        navContainerRef.current?.classList.add('floating-nav'); // adding class based on scroll position
     }
 
     setLastScrollY(currentScrollY);
